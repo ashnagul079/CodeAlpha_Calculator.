@@ -9,6 +9,14 @@
 <body>
 
     <div class="calculator">
+        <!-- Status Bar -->
+        <div class="status-bar">
+    <span class="status-time">9:41</span>
+    <div class="status-icons">
+        <span>📶</span>
+        <span>🔋</span>
+    </div>
+</div>
         <!-- Display Area -->
         <div class="display-container">
             <div id="history"></div>
@@ -21,30 +29,30 @@
             <button class="btn top-btn" onclick="clearDisplay()">C</button>
             <button class="btn top-btn" onclick="deleteLast()">DEL</button>
             <button class="btn top-btn" onclick="appendValue('%')">%</button>
-            <button class="btn top-btn" onclick="appendValue('/')">÷</button>
+            <button class="btn op-btn" onclick="appendValue('/')">÷</button>
 
             <!-- Row 2 -->
             <button class="btn num-btn" onclick="appendValue('7')">7</button>
             <button class="btn num-btn" onclick="appendValue('8')">8</button>
             <button class="btn num-btn" onclick="appendValue('9')">9</button>
-            <button class="btn top-btn" onclick="appendValue('*')">×</button>
+            <button class="btn op-btn" onclick="appendValue('*')">×</button>
 
             <!-- Row 3 -->
             <button class="btn num-btn" onclick="appendValue('4')">4</button>
             <button class="btn num-btn" onclick="appendValue('5')">5</button>
             <button class="btn num-btn" onclick="appendValue('6')">6</button>
-            <button class="btn top-btn" onclick="appendValue('-')">-</button>
+            <button class="btn op-btn" onclick="appendValue('-')">-</button>
 
             <!-- Row 4 -->
             <button class="btn num-btn" onclick="appendValue('1')">1</button>
             <button class="btn num-btn" onclick="appendValue('2')">2</button>
             <button class="btn num-btn" onclick="appendValue('3')">3</button>
-            <button class="btn top-btn" onclick="appendValue('+')">+</button>
+            <button class="btn op-btn" onclick="appendValue('+')">+</button>
 
             <!-- Row 5 -->
             <button class="btn num-btn zero-btn" onclick="appendValue('0')">0</button>
             <button class="btn num-btn" onclick="appendValue('.')">.</button>
-            <button class="btn top-btn" onclick="calculate()">=</button>
+            <button class="btn op-btn" onclick="calculate()">=</button>
         </div>
     </div>
 
